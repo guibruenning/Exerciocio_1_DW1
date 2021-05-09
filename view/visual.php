@@ -3,13 +3,16 @@
 </div>
 
 <div class="divDice">
-    <img class="dice hide" />
+    <div class="dice hide"></div>
 </div>
 
 <script>
     $(".buttonClick").click(()=>{
-        if($(".dice").attt("class"))
+        if($(".dice.hide").length != 0 ){
+            $(".dice.hide").removeClass("hide")
+        }
         var ran = randomFunction()
-        $(".dice").attr("src", 'img/icons/dice_'+randomFunction()+'.png')
+        switchImage()
+        $(".dice").css("background-image", 'url(./img/icons/dice_'+randomFunction()+'.png)')
     })
 </script>
