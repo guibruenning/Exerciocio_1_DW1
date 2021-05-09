@@ -1,0 +1,11 @@
+.dice {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100px;
+}
+
+.hide {
+    display: none;
+}
