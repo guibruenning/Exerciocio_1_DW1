@@ -16,7 +16,12 @@
     width: 300px;
     height: 300px;
     top: 50vh;
-    left: auto;
+    left: 30vw;
+    flex-direction: column;
+}
+
+.containerWinner .winner {
+    text-align: center;
 }
 
 .hide {
