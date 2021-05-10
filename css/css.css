@@ -6,6 +6,12 @@
     background-size: 100px;
 }
 
+.buttonClick {
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+}
+
 .conteudo {
     margin-top: 20px;
 }
@@ -15,9 +21,22 @@
     display: flex;
     width: 400px;
     height: 100px;
-    top: 50vh;
-    left: 20vw;
+    top: 26vh;
+    left: 28vw;
     flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .containerWinner {
+        top: inherit;
+        bottom: 12vh;
+        left: 4vh;
+        max-width: 300px;
+    }
+    .buttonClick {
+        bottom: 30vh;
+        top: inherit;
+    }
 }
 
 .containerWinner .winner {

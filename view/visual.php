@@ -1,6 +1,6 @@
 <div class="container conteudo">
     <div>
-        <button id="buttonClick" nome="buttonClick" class=" buttonClick btn btn-primary">Rolar Dados</button>
+        <button id="buttonClick" nome="buttonClick" class="buttonClick btn-lg btn btn-primary">Jogar Dados</button>
     </div>
     <div class="row">
         <div class="divDice col">
@@ -21,6 +21,7 @@
             <div class="dice quatro hide"></div>
         </div>
     </div>
+
     <div class="container containerWinner hide">
         <label>O vencedor é </label>
 
