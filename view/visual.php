@@ -21,13 +21,13 @@
             <div class="dice quatro hide"></div>
         </div>
     </div>
-    <div class="container containerWinner">
+    <div class="container containerWinner hide">
         <label>O vencedor é </label>
 
         <div class="winner fs-1 bg-primary bg-gradient"></div>
-
-        <label>com o Jogador tirando<b class="resultPlayer"></b> e o Computador tirando <b class="resultComputer"></b>
+        <label>com o Jogador tirando <b class="resultPlayer"></b> e o Computador tirando <b class="resultComputer"></b></label>
     </div>
+    
 </div>
 <script>
 
@@ -41,7 +41,12 @@
         setTimeout(dices, 4000, ".tres")
         
         setTimeout(dices, 6000, ".quatro")
-
-        setTimeout(function(){$('.winner').text(winner())},8000)
+        
+        setTimeout(function(){
+            $('.containerWinner').removeClass('hide')
+            $('.winner').text(winner())
+            $('.resultPlayer').text(getPlayer())
+            $('.resultComputer').text(getComputer())
+        },8000)
     })
 </script>

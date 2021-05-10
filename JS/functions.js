@@ -2,6 +2,8 @@ var ran_1 = 0
 var ran_2 = 0
 var ran_3 = 0
 var ran_4 = 0
+var ran_player = 0;
+var ran_computer = 0;
 
 function log(msg) {
     console.log(msg)
@@ -49,19 +51,15 @@ function dices(position) {
 
         switch (position) {
             case ".um":
-                log("1 " + ran_1)
                 $(".dice" + position).css("background-image", 'url(./img/icons/dice_' + ran_1 + '.png)')
                 break
             case ".dois":
-                log("2 " + ran_2)
                 $(".dice" + position).css("background-image", 'url(./img/icons/dice_' + ran_2 + '.png)')
                 break
             case ".tres":
-                log("3 " + ran_3)
                 $(".dice" + position).css("background-image", 'url(./img/icons/dice_' + ran_3 + '.png)')
                 break
             case ".quatro":
-                log("4 " + ran_4)
                 $(".dice" + position).css("background-image", 'url(./img/icons/dice_' + ran_4 + '.png)')
                 break
             default:
@@ -76,12 +74,18 @@ function dices(position) {
 function winner() {
     ran_player = ran_1 + ran_2
     ran_computer = ran_3 + ran_4
-    log(ran_computer)
-    log(ran_player)
     if (ran_player > ran_computer)
         return "Jogador"
     if (ran_player < ran_computer)
         return "Computador"
     else
         return "Impate"
+}
+
+function getPlayer() {
+    return "" + ran_player
+}
+
+function getComputer() {
+    return "" + ran_computer
 }
