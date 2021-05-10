@@ -6,6 +6,19 @@
     background-size: 100px;
 }
 
+.conteudo {
+    margin-top: 20px;
+}
+
+.containerWinner {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 50vh;
+    left: auto;
+}
+
 .hide {
     display: none;
 }
